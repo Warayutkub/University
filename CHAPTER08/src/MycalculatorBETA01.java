@@ -113,7 +113,7 @@ public class MycalculatorBETA01 implements ActionListener {
     protected void Multiply(String data[]) {
         double number1 = Double.parseDouble(data[0]);
         double number2 = Double.parseDouble(data[2]);
-        String result = String.valueOf(number1 - number2);
+        String result = String.valueOf(number1 * number2);
         int indexPoint = result.indexOf(".");
         if (result.substring(indexPoint + 1).equals("0")) {
             displayField.setText(result.substring(0, indexPoint));
