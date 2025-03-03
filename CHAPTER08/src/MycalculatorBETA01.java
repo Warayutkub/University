@@ -174,6 +174,7 @@ public class MycalculatorBETA01 implements ActionListener {
         if (extractString[2] != null)
         dataSend += String.join("", extractString[0], extractString[1], extractString[2], "0");
         displayField.setText(dataSend);
+        System.out.println("Test");
     }
 
     private void setPointBtn(String storeText) {
